@@ -14,8 +14,8 @@ type Store interface {
 
 // SQLStore provides all functions to execute SQL queries and transactions
 type SQLStore struct {
-	*Queries
 	db *sql.DB
+	*Queries
 }
 
 // TransferTxParams contains the input parameters of the transfer transaction
